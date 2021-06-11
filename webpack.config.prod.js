@@ -2,11 +2,11 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
-  mode: 'development',
-  devtool: 'eval-source-map',
+  mode: 'production',
+  devtool: 'source-map',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'src'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js',
   },
